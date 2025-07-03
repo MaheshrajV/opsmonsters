@@ -9,8 +9,8 @@ function add_det() {
     read username
     echo "Enter password:"
     read -s  password
-    echo "service: $service |username: $username |password: $password" >> "$Storage"
-    printf "Data Saved /n --------------------------------"
+    echo -e "$service => username: $username => password: $password" >> "$Storage"
+    printf "*****Data Saved***** \n"
 }
 
 function vdetails() {
@@ -21,7 +21,7 @@ function vdetails() {
     else
         echo "Storage not found"
     fi
-    echo "------------------------------------"
+    echo "-------------------------------"
 }
 
 function search() {
@@ -33,29 +33,35 @@ function search() {
     else
 	    echo "keyword not found"
     fi
-    echo "-----------------------------------"
+    echo "-----------------------------------\n"
+}
+function del_data() {
+	echo "enter the  service want to delete:"
+	read serdel
+	sed -i "/^$serdel/d" data_st.txt
+	echo "the data has been deleted"
+
 }
 
+function exit_term() {
+	echo "See you again mahesh!"
+	exit
+}
 function intro() {
-    echo "-------Password Manager-------"
-    echo "1. Add Data"
-    echo "2. View All Data"
-    echo "3. Search Data"
-    echo "4. Exit"
-    echo "------------------------------"
+    echo -e  "-------Password Manager-------\n1. Add Data\n2. View All Data\n3. Search Data\n4. Delete the data\n5. Exit\n-------------------------\n"
     echo -n "Choose an option: "
     read option
-
     case $option in
         1) add_det ;;
         2) vdetails ;;
         3) search ;;
-        4) echo -e "Exiting.../n Bye Mahesh"; exit ;;
+        4) del_data ;;
+	5)exit_term;;
         *) echo " Invalid choice, try again." ;;
     esac
 }
 
-while true
+while true;
 do
     intro
 done

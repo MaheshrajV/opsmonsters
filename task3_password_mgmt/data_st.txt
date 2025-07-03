@@ -1,3 +1,2 @@
-Flipkart | mahesh@12 | fliP@1234
-facebook | rioMahesh | Engineer$we
-service: whatapp |username: mahi#2003 |password: Engineer@345
+chrome => username: mraj345 => password: Engunier45
+whatapp => username: mahesh => password: Eranki nillu
