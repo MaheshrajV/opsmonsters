@@ -1,2 +1,6 @@
-chrome => username: mraj345 => password: Engunier45
 whatapp => username: mahesh => password: Eranki nillu
+chrome => username: mahesh567 => password: Engineer#45
+firefox => username: mahesh54 => password: Ehutyhr45%
+youtube => username: rrio789 => password: Returnbb89
+facebook => username: monsters => password: 09kioojr4
+twitter => username: prettyboy => password: 0fheiu34iu4
